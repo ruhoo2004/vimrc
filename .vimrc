@@ -112,4 +112,4 @@ nmap <leader>f :CtrlP .<CR>
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
-let g:Powerline_theme = 'solarized256'
+"let g:Powerline_theme = 'solarized256'
