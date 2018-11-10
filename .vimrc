@@ -32,6 +32,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'derekwyatt/vim-fswitch'
@@ -39,6 +40,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'tpope/vim-fugitive'
+Plugin 'kien/ctrlp.vim'
 "Plugin 'kshenoy/vim-signature'
 "Plugin 'vim-scripts/BOOKMARKS--Mark-and-Highlight-Full-Lines'
 Plugin 'majutsushi/tagbar'
@@ -63,7 +65,7 @@ call vundle#end()
 filetype plugin indent on
 
 " hotkey setup
-let mapleader=";"
+let mapleader=" "
 nmap <leader>lb 0
 nmap <leader>le $
 
@@ -102,5 +104,12 @@ nmap <leader>a :Ack!
 nmap <leader>nn :NERDTreeToggle<CR>
 nmap <leader>nc :NERDTree %<CR>
 
+" ctrlp
+nmap <leader>o :CtrlPMRU<CR>
+nmap <leader>f :CtrlP .<CR>
+
 " theme setup
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
 let g:Powerline_theme = 'solarized256'
